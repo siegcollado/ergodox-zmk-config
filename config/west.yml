@@ -1,11 +1,12 @@
 manifest:
   remotes:
     - name: slicemk
-      url-base: https://github.com/slicemk
+      url-base: https://github.com/siegcollado
   projects:
     - name: zmk
       remote: slicemk
-      revision: main
+      revision: v20210618
       import: app/west.yml
+      clone-depth: 1
   self:
     path: config

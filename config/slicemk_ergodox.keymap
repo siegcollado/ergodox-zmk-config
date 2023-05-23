@@ -13,26 +13,38 @@
 #define HYP LS(LC(LA(LGUI)))
 #define MEH LC(LA(LGUI))
 #define HYPER(key) LS(LC(LA(LG(key))))
+#define MO_TOG(layer) &mo_tog layer layer
 
 &mt {
    tapping-term-ms = <200>;
 };
 
 / {
+        behaviors {
+            mo_tog: behavior_mo_tog {
+                compatible = "zmk,behavior-hold-tap";
+                label = "mo_tog";
+                #binding-cells = <2>;
+                flavor = "hold-preferred";
+                tapping-term-ms = <200>;
+                bindings = <&mo>, <&tog>;
+            };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
                         bindings = <
     &bootloader
-    &kp GRAVE    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp MINUS  &kp EQUAL  &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &kp BSPC
-    &kp TAB      &kp Q      &kp W      &kp E      &kp R      &kp T      &kp LBKT   &kp RBKT   &kp Y     &kp U     &kp I      &kp O      &kp P      &kp BSLH
-    &kp ESC      &kp A      &kp S      &kp D      &kp F      &kp G                            &kp H     &kp J     &kp K      &kp L      &kp SEMI   &kp SQT
-    &kp LSHFT    &kp Z      &kp X      &kp C      &kp V      &kp B      &kp CAPS   &tog NUM   &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
-    &tog CMK     &kp LCTRL  &mo FN     &kp LALT   &kp LGUI                                              &mo SYM   &kp LARW   &kp DARW   &kp UARW   &kp RARW
-                                                             &kp INS    &kp HOME   &kp PGUP   &kp DEL
+    &kp GRAVE    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp MINUS  &kp EQUAL   &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &kp BSPC
+    &kp TAB      &kp Q      &kp W      &kp E      &kp R      &kp T      &kp LBKT   &kp RBKT    &kp Y     &kp U     &kp I      &kp O      &kp P      &kp BSLH
+    &kp ESC      &kp A      &kp S      &kp D      &kp F      &kp G                             &kp H     &kp J     &kp K      &kp L      &kp SEMI   &kp SQT
+    &kp LSHFT    &kp Z      &kp X      &kp C      &kp V      &kp B      &kp CAPS   MO_TOG(NUM) &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
+    &tog CMK     &kp LCTRL  &mo FN     &kp LALT   &kp LGUI                                               &mo SYM   &kp LARW   &kp DARW   &kp UARW   &kp RARW
+                                                             &kp INS    &kp HOME   &kp PGUP    &kp DEL
                                                                         &kp END    &kp PGDN 
-                                                  &kp SPACE  &kp LCTRL                        &kp MEH   &kp RET
+                                                  &kp SPACE  &kp LCTRL                         &kp MEH   &kp RET
                                                                         &kp HYP    &mo MED
                         >;
                 };
@@ -63,7 +75,7 @@
                                                            &trans     &trans     &trans     &trans
                                                                       &trans     &trans
                                                 &trans     &trans                           &trans     &trans
-                                                                      &none      &trans
+                                                                      &trans     &trans
                         >;
                 };
 

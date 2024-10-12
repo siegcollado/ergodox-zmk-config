@@ -70,10 +70,10 @@ layers:
   - HOME
   - PGUP
   - DEL
-  - END
-  - PGDN
   - SPACE
   - LCTRL
+  - END
+  - PGDN
   - Ctl+Alt+ LGUI
   - RET
   - Meh+ LGUI

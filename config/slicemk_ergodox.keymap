@@ -43,8 +43,7 @@
     &kp LSHFT    &kp Z      &kp X      &kp C      &kp V      &kp B      &kp LBKT   &kp RBKT    &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
     &none        &none      &kp LALT   &kp LGUI   &mo LOWER                                              &mo RAISE &mo MEDIA  &none      &none      &none
                                                              &kp INS    &kp HOME   &kp PGUP    &kp DEL
-                                                                        &kp END    &kp PGDN 
-                                                  &kp SPACE  &kp LCTRL                         &kp MEH   &kp RET
+                                                  &kp SPACE  &kp LCTRL  &kp END    &kp PGDN    &kp MEH   &kp RET
                                                                         &kp HYP    &mo MEDIA
                         >;
                 };
@@ -58,8 +57,7 @@
     &trans       &kp Z      &kp X      &kp C      &kp V      &kp B      &trans     &trans     &kp K     &kp M     &trans     &trans     &trans     &trans
     &trans       &trans     &trans     &trans     &trans                                                &trans    &trans     &trans     &trans     &trans
                                                              &trans     &trans     &trans     &trans
-                                                                        &trans     &trans
-                                                  &trans     &trans                           &trans  &trans
+                                                  &trans     &trans     &trans     &trans     &trans  &trans
                                                                         &trans     &trans
                         >;
                 };
@@ -73,8 +71,7 @@
     &none      &none      &none      &none      &none      &none      &none      &none      &none      &kp N0     &kp COMMA  &kp DOT    &none      &none
     &trans     &trans     &trans     &trans     &trans                                                 &trans     &trans     &trans     &trans     &trans
                                                            &trans     &trans     &trans     &trans
-                                                                      &trans     &trans
-                                                &trans     &trans                           &trans     &trans
+                                                &trans     &trans     &trans     &trans     &trans     &trans
                                                                       &trans     &trans
                         >;
                 };
@@ -120,8 +117,7 @@
     &none      &none         &none         &none      &none      &none      &none      &none      &none         &none         &none         &none         &none         &none
     &none      &none         &none         &none      &none                                                     &kp C_PREV    &kp C_PP      &kp C_NEXT    &none         &bt BT_CLR
                                                                  &none      &none      &none      &kp C_MUTE
-                                                                            &none      &none
-                                                      &none      &none                            &kp C_VOL_DN  &kp C_VOL_UP
+                                                      &none      &none      &none      &none      &kp C_VOL_DN  &kp C_VOL_UP
                                                                             &none      &none
                         >;
                 };

@@ -41,7 +41,7 @@
     &kp TAB      &kp Q      &kp W      &kp E      &kp R      &kp T      &kp CAPS   MO_TOG(NUM) &kp Y     &kp U     &kp I      &kp O      &kp P      &kp BSLH
     &kp LCTRL    &kp A      &kp S      &kp D      &kp F      &kp G                             &kp H     &kp J     &kp K      &kp L      &kp SEMI   &kp SQT
     &kp LSHFT    &kp Z      &kp X      &kp C      &kp V      &kp B      &kp LBKT   &kp RBKT    &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
-    &none        &none      &kp LALT   &kp LGUI   &mo LOWER                                              &mo RAISE &mo MEDIA  &none      &none      &tog CMK
+    &none        &none      &kp LALT   &kp LGUI   &mo LOWER                                              &mo RAISE &mo MEDIA  &none      &none      &none
                                                              &kp INS    &kp HOME   &kp PGUP    &kp DEL
                                                                         &kp END    &kp PGDN 
                                                   &kp SPACE  &kp LCTRL                         &kp MEH   &kp RET
@@ -71,7 +71,7 @@
     &none      &none      &none      &none      &none      &none      &none      &tog NUM   &none      &kp N4     &kp N5     &kp N6     &none      &none
     &none      &none      &none      &none      &none      &none                            &none      &kp N1     &kp N2     &kp N3     &none      &none
     &none      &none      &none      &none      &none      &none      &none      &none      &none      &kp N0     &kp COMMA  &kp DOT    &none      &none
-    &none      &none      &none      &none      &none                                                  &trans     &trans     &trans     &trans     &trans
+    &trans     &trans     &trans     &trans     &trans                                                 &trans     &trans     &trans     &trans     &trans
                                                            &trans     &trans     &trans     &trans
                                                                       &trans     &trans
                                                 &trans     &trans                           &trans     &trans

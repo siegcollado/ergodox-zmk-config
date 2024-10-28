@@ -2,7 +2,7 @@ layout: {qmk_keyboard: slicemk_ergodox}
 layers:
   default:
   - '&bootloader'
-  - ESC
+  - {t: ESC, s: '`'}
   - '1'
   - '2'
   - '3'
@@ -60,11 +60,11 @@ layers:
   - ''
   - LALT
   - LGUI
-  - lower
   - raise
+  - lower
+  - RGUI
+  - RALT
   - media
-  - ''
-  - ''
   - ''
   - INS
   - HOME
@@ -236,66 +236,66 @@ layers:
   - {t: ▽, type: trans}
   lower:
   - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - <
+  - '['
+  - '{'
+  - (
+  - '~'
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - F1
-  - F2
-  - F3
-  - F4
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - F5
-  - F6
-  - F7
-  - F8
-  - ''
-  - LARW
-  - DARW
-  - UARW
-  - RARW
-  - ''
-  - ''
-  - ''
-  - F9
-  - F10
-  - F11
-  - F12
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '`'
+  - )
+  - '}'
+  - ']'
+  - '>'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - '='
+  - +
+  - '*'
+  - /
+  - '#'
+  - {t: RGUI, h: sticky}
+  - {t: RALT, h: sticky}
+  - {t: RCTRL, h: sticky}
+  - {t: RSHFT, h: sticky}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ^
+  - _
+  - '&'
+  - '|'
+  - '?'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -328,51 +328,129 @@ layers:
   - ''
   - ''
   - ''
-  - '~'
-  - '-'
-  - '='
-  - +
-  - '*'
-  - /
   - ''
   - ''
-  - '|'
-  - _
-  - '{'
-  - '}'
-  - \
   - ''
   - ''
-  - '`'
-  - ''''
-  - '"'
-  - .
-  - ','
-  - <
-  - '>'
-  - (
-  - )
-  - ':'
-  - '?'
-  - ''
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
   - ''
   - ''
-  - ^
-  - '&'
-  - '['
-  - ']'
-  - ;
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: LSHFT, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LGUI, h: sticky}
+  - ''
+  - LARW
+  - DARW
+  - UARW
+  - RARW
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  fn:
+  - '&bootloader'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - ''
+  - ''
+  - ''
+  - ''
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - ''
+  - {t: LSHFT, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LGUI, h: sticky}
+  - ''
+  - ''
+  - {t: RGUI, h: sticky}
+  - {t: RALT, h: sticky}
+  - {t: RCTRL, h: sticky}
+  - {t: RSHFT, h: sticky}
+  - ''
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -452,9 +530,9 @@ layers:
   - ''
   - ''
   - PREV
-  - {t: PP, type: held}
+  - PP
   - NEXT
-  - ''
+  - {type: held}
   - BT CLR
   - ''
   - ''
